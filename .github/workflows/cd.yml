@@ -36,8 +36,8 @@ jobs:
       uses: 'google-github-actions/auth@v2'
       with:
         # These values come from your GitHub Repository Secrets.
-        workload_identity_provider: '${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}'
-        service_account: '${{ secrets.GCP_SERVICE_ACCOUNT }}'
+        workload_identity_provider: '${{ secrets.MYWORKLOADIDENTITY_PROVIDER }}'
+        service_account: '${{ secrets.MYSERVICEACCOUNT }}'
 
     - name: 'Step 3: Set up Cloud SDK (gcloud)'
       uses: 'google-github-actions/setup-gcloud@v2'
